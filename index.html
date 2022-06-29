@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/623c7fa679.js" crossorigin="anonymous"></script>
+    <title>Leo Proyectos Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header--container">
+            <div class="name--">Leonardo Soplapuco</div>
+            <div class="name--text">Full stack developer</div>
+        </div>
+        <div class="items--container">
+            <div class="items-- one--i">
+                <div class="first--">¿Back-end y <br> front-end?</div>
+                <div class="see-more">
+                    <a href="">Leer más</a>
+                </div>
+            </div>
+            <div class="items-- two--i">
+                <div class="first--">¿Diseñador o programador?</div>
+                <div class="see-more">
+                    <a href="">Leer más</a>
+                </div>
+            </div>
+            <div class="items-- three--i">
+                <div class="first--">Ver proyectos trabajados</div>
+                <div class="see-more">
+                    <a href="#proyectos">Visitar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="menu--container">
+        <div class="menu--">
+            <div class="logo"><a href="index.html">Leo</a></div>
+            <input type="checkbox" id="toogler">
+            <label for="toogler"><i class="fa-solid fa-bars"></i></label>
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="">Acerca</a></li>
+                    <li><a href="#form">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="block-0 blocks">
+        <div class="welco max">
+            <div class="text">
+                <div class="hi">¡Hola!</div>
+                <p>Bienvenid@ a mi portafolio web personal donde podrás saber un poco más sobre mí y los proyectos en los que eh trabajado.</p>
+            </div>
+        </div>
+    </div>
+    <div class="block-1 blocks">
+        <div class="one-- max">
+            <div class="text">
+                Ser un desarrollador web <b>Full stack</b> significa que convina ambas especialidades: <b>Font-end</b> y <b>Back-end</b>.
+                <br>
+                <br>
+                <div id="font-end">
+                    La programación web <b>Front-end</b> prioriza la éstetica visual de la página web 
+                    tales como la paleta de colores, imágenes, fuente de la letra, animaciones, etc. De 
+                    tal manera que el usuario que esté visualizando la página se sienta cómodo y le agrade 
+                    lo que está viendo. Los lenguajes bases son: HTML, CSS, JavaScript y React.
+                </div>
+                <br>
+                <div id="back-end">
+                    El desarrollador <b>Back-end</b> se especializa más en como es el sitio "por detrás" 
+                    se encarga más de alguna base de datos que pueda requerir el sitio, si quiere traer 
+                    información de algún servidor, etc. Los lenguajes más usados son: PHP, MySQL, Python, 
+                    JavaScript.
+                </div>
+                <br>
+                <div class="im-full">
+                    Yo soy un desarrollador web Full stack
+                </div>
+            </div>
+            <div class="tec--">
+                <div class="tec">
+                    <img src="https://www.staffcreativa.pe/blog/wp-content/uploads/HTML5.jpg" class="tect-img one-">
+                    <img src="https://armyyazilim.com/wp-content/uploads/2019/10/css.png" class="tect-img two-">
+                    <img src="https://diegoboscan.com/static/738155fe5ef8b31a8de213cbd0295fc8/743e0/js-1.png" class="tect-img three-">
+                    <img src="https://solvex.com.do/media/bp4gyluf/1280px-react-icon-svg.png" class="tect-img four-">
+                    <img src="" class="tect-img five-">
+                    <img src="" class="tect-img six-">
+                    <img src="" class="tect-img seven-">
+                    <img src="" class="tect-img eight-">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-2 blocks">
+        <div class="two-- max">
+            <div class="slide-contenedor">
+                <div class="mislider">
+                    <img src="one.jpg">
+                </div>
+                <div class="mislider">
+                    <img src="two.png">
+                </div>
+                <div class="mislider">
+                    <img src="three.jpg">
+                </div>
+                <div class="direcciones">
+                    <i class="fa-solid fa-chevron-left atras" onClick="avanzaSlide(-1)"></i>
+                    <i class="fa-solid fa-chevron-right adelante" onClick="avanzaSlide(1)"></i>
+                </div>
+                <div class="barras">
+                    <span class="barra active" onclick="positionSlide(1)"></span>
+                    <span class="barra" onclick="positionSlide(2)"></span>
+                    <span class="barra" onclick="positionSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-3 blocks" id="proyectos">
+        <div class="three-- max">
+            <div class="pro--">Proyectos en los que he participado</div>
+        </div>
+    </div>
+    <div class="block-4 blocks">
+        <div class="four-- max">
+            <form class="form" id="form">
+                <div class="conta--">formulario de contacto</div>
+                <input class="input" type="text" placeholder="Nombres" maxlength="25" required>
+                <input class="input" type="email" placeholder="Correo eléctronico" maxlength="50" required>
+                <textarea class="textarea" placeholder="Mensaje"></textarea>
+                <input type="submit" value="Enviar" class="submit">
+            </form>
+        </div>
+        <a href="#header" class="go-up"><i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+    <footer>
+        <div class="footer max blocks">
+            Entonces le dije, vas ir o no vas ir
+        </div>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>
